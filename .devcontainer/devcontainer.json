@@ -1,6 +1,6 @@
 {
   "name": "Enterprise AI Coding - Java Spring Boot",
-  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/java:21-bookworm",
 
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
