@@ -21,6 +21,9 @@ Servira piu avanti per costruire le slide del corso, mantenendo coerenza tra:
 ## Fonti gia analizzate
 
 - exercises/01_prompt_engineering_ai_coding.md
+- exercises/02_data_leakage_prompt_injection.md
+- exercises/03_design_patterns_refactoring_ai.md
+- docs/02_AI_Coding_Safety_Checklist.md
 
 ## Blocco 1 - Obiettivo generale
 
@@ -200,7 +203,142 @@ Punti da spiegare:
 - bisogna separare istruzioni per l'AI e dati dell'applicazione
 - l'esercizio ha taglio difensivo: riconoscimento del rischio, prevenzione e mitigazione
 
-## Da completare dopo la lettura degli altri file
+## Sezione slide 9 - Design Pattern: problema prima della soluzione
 
+Fonte analizzata:
+
+- exercises/03_design_patterns_refactoring_ai.md
+
+Messaggio chiave:
+
+Un design pattern va scelto per risolvere un problema reale, non per rendere il codice piu sofisticato.
+
+Scenario dell'esercizio:
+
+Nel project work Ticket Management API, lo stato di un ticket puo cambiare durante il suo ciclo di vita.
+
+Stati ipotizzati:
+
+- OPEN
+- IN_PROGRESS
+- RESOLVED
+- CLOSED
+
+Punti da spiegare:
+
+- prima si descrive la logica applicativa
+- poi si valuta se la soluzione attuale puo diventare difficile da mantenere
+- solo dopo si chiede all'AI di confrontare possibili soluzioni
+- non bisogna chiedere subito all'AI di applicare un design pattern
+- l'AI deve ricevere contesto, vincoli e criteri di valutazione
+
+Esempio di rischio:
+
+Chiedere "applica un design pattern" senza spiegare il problema puo produrre una soluzione formalmente avanzata ma non proporzionata.
+
+## Sezione slide 10 - Alternative e rischio di overengineering
+
+Messaggio chiave:
+
+La soluzione piu sofisticata non e automaticamente la soluzione migliore.
+
+Alternative analizzate nell'esercizio:
+
+- metodo semplice nel Service
+- mappa delle transizioni consentite
+- Strategy Pattern
+- State Pattern
+
+Punti da spiegare:
+
+- un metodo semplice puo bastare se le regole sono poche e stabili
+- una mappa delle transizioni puo rendere esplicite regole tabellari
+- Strategy Pattern puo essere utile se cambiano i comportamenti per stato o transizione
+- State Pattern puo essere utile se ogni stato ha comportamento specifico
+- Strategy e State possono introdurre overengineering se il problema e semplice
+- la scelta deve essere motivata rispetto al contesto didattico e tecnico
+
+## Sezione slide 11 - Decisione architetturale: AI come supporto, umano come responsabile
+
+Messaggio chiave:
+
+L'AI puo aiutare a confrontare alternative, ma la decisione architetturale resta umana.
+
+Punti da spiegare:
+
+- Copilot o Claude possono proporre alternative
+- l'AI puo evidenziare vantaggi e svantaggi
+- l'AI puo aiutare a individuare rischi di overengineering
+- la proposta AI deve essere sottoposta a review critica
+- bisogna valutare leggibilita, testabilita, sicurezza e manutenibilita
+- prima di implementare serve capire quali test verificano le transizioni di stato
+
+Checkpoint didattico:
+
+Prima di accettare un refactoring suggerito dall'AI, il partecipante deve chiedersi se la soluzione e proporzionata, comprensibile e verificabile.
+
+## Sezione slide 12 - Checklist di sicurezza AI Coding
+
+Fonte analizzata:
+
+- docs/02_AI_Coding_Safety_Checklist.md
+
+Messaggio chiave:
+
+La checklist trasforma i principi del Blocco 1 in controlli operativi da usare prima di lavorare con Copilot o Claude.
+
+Punti da spiegare:
+
+- prima di scrivere un prompt bisogna chiarire obiettivo, contesto, vincoli e output atteso
+- prima di incollare log o stack trace bisogna controllare dati personali, token, credenziali e URL interni
+- gli esempi devono usare solo dati fittizi
+- eventuali log devono essere ridotti e anonimizzati
+- i dati applicativi devono restare separati dalle istruzioni per l'AI
+- i contenuti inseriti dagli utenti non devono essere trattati come istruzioni affidabili
+
+## Sezione slide 13 - Prima di accettare codice generato dall'AI
+
+Messaggio chiave:
+
+Il codice generato dall'AI non deve essere accettato automaticamente.
+
+Punti da spiegare:
+
+- leggere il codice per intero
+- capire cosa fa
+- verificare che rispetti l'architettura richiesta
+- controllare che non introduca dipendenze inutili
+- controllare la gestione degli errori
+- valutare possibili problemi di sicurezza
+- prevedere test coerenti
+- distinguere codice generato dall'AI, codice revisionato e codice ancora da verificare
+
+## Sezione slide 14 - Review umano vs AI e passaggio al Blocco 2
+
+Messaggio chiave:
+
+La review AI e utile, ma la validazione finale resta umana.
+
+Punti da spiegare:
+
+- l'AI puo controllare correttezza logica, sicurezza e test mancanti
+- l'AI puo distinguere problemi certi da ipotesi
+- la review AI deve essere validata da una persona
+- le modifiche accettate devono essere motivate
+- prima del Blocco 2 bisogna saper scrivere prompt strutturati
+- bisogna saper anonimizzare dati e log
+- bisogna saper chiedere review preventive
+- bisogna saper valutare se un design pattern e davvero utile
+
+Checkpoint di chiusura Blocco 1:
+
+Prima di passare alla generazione assistita dei moduli applicativi, il partecipante deve saper guidare, vincolare, verificare e documentare l'uso dell'AI.
+
+## Stato scaletta Blocco 1
+
+La scaletta del Blocco 1 ora integra:
+
+- esercizio 1: prompt engineering applicato all'AI Coding
+- esercizio 2: data leakage e prompt injection
 - esercizio 3: design pattern e refactoring assistito
-- checklist finale del Blocco 1
+- checklist finale di sicurezza AI Coding
