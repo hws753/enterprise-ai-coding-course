@@ -113,6 +113,52 @@ Ogni attività sul codice deve quindi essere collegata a uno o più aspetti del 
 - Libreria di prompt strutturati
 - Checklist sicurezza AI coding
 
+## Budget orario del corso
+
+Il corso ha una durata complessiva dichiarata di 24 ore.
+
+Questa sezione serve a controllare la densita didattica del percorso, evitando che gli esercizi pratici occupino tutto il tempo disponibile e lascino poco spazio a teoria, confronto, project finale e deliverable.
+
+### Stima esercizi prodotti finora
+
+| Area | Esercizi | Durata indicativa |
+| --- | --- | --- |
+| Blocco 1 - Foundations & Sicurezza | Esercizi 1, 2, 3 | 135-180 min |
+| Blocco 2 - Generazione, persistenza, pipeline | Esercizi 4, 5, 6 | 195-240 min |
+| Totale esercizi 1-6 |  | 330-420 min, cioe 5,5-7 ore |
+
+L'Esercizio 7, dedicato alla code review umano vs AI, dovra essere piu snello rispetto all'Esercizio 6.
+
+Durata target Esercizio 7:
+
+- 45-60 minuti
+- massimo operativo: 75 minuti
+
+Stima esercizi 1-7:
+
+- durata ordinaria: circa 6,25-8 ore
+- durata massima operativa: circa 8,25 ore
+
+### Budget operativo sulle 24 ore
+
+| Area del corso | Budget orientativo | Nota |
+| --- | --- | --- |
+| Blocco 1 - metodo, sicurezza, prompt, design pattern | 6 ore | Include teoria, esercizi e confronto |
+| Blocco 2 - engineering, persistenza, pipeline, code review | 8 ore | Include esercizi 4-7 e review guidata |
+| Blocco 3 - performance, costi, skills | 4 ore | Da mantenere operativo e non sovraccaricato |
+| Project finale e deliverable | 4 ore | Applicativo, prompt library, README, skill personale |
+| Buffer, Q&A e riallineamenti | 2 ore | Margine per ritardi, setup o discussione |
+| Totale | 24 ore | Budget da verificare durante la progettazione finale |
+
+### Decisioni di gestione della densita
+
+- L'Esercizio 6 e un esercizio ricco: alcune parti possono essere trattate come avanzate o opzionali.
+- Il GlobalExceptionHandler esteso puo diventare un task avanzato per chi conclude prima.
+- L'Esercizio 7 deve restare focalizzato sulla code review umano vs AI, senza trasformarsi in revisione completa di tutto il progetto.
+- Il Blocco 3 deve restare concreto: performance, costi, skill personale e project finale.
+- Ogni esercizio deve produrre valore didattico, ma non deve assorbire tutto il tempo disponibile.
+- Il budget orario dovra essere ricontrollato dopo la produzione dell'Esercizio 7 e prima dell'avvio del Blocco 3.
+
 ## Nota su skills.sh
 
 Nel programma originale compare il riferimento a skills.sh.
