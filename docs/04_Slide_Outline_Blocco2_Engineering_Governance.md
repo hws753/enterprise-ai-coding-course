@@ -21,6 +21,7 @@ Servira piu avanti per costruire le slide del corso, mantenendo coerenza tra:
 ## Fonti gia analizzate
 
 - exercises/04_assisted_ticket_module_generation.md
+- exercises/05_repository_dto_persistence_ai.md
 
 ## Blocco 2 - Obiettivo generale
 
@@ -172,9 +173,77 @@ Punti da verificare in aula:
 - i partecipanti sanno distinguere codice generato, codice revisionato e codice ancora da verificare
 - i partecipanti hanno compreso che ogni output AI deve essere letto, compreso, testato e documentato
 
+## Sezione slide 9 - Persistenza assistita: stato iniziale del progetto
+
+Fonte analizzata:
+
+- exercises/05_repository_dto_persistence_ai.md
+
+Messaggio chiave:
+
+Prima di chiedere all'AI di generare codice di persistenza, bisogna leggere lo stato reale del progetto.
+
+Punti da spiegare:
+
+- il pom.xml contiene gia le dipendenze per JPA, Validation, Web MVC, H2 e test
+- application.properties contiene solo spring.application.name=ticket-api
+- H2 e JPA sono disponibili, ma non sono ancora configurati esplicitamente
+- l'AI non deve aggiungere dipendenze gia presenti
+- leggere i file esistenti riduce il rischio di configurazioni inutili o incoerenti
+
+## Sezione slide 10 - DTO: separare input e output
+
+Messaggio chiave:
+
+I DTO aiutano a separare i dati ricevuti dall'API dai dati restituiti verso l'esterno.
+
+Punti da spiegare:
+
+- CreateTicketRequest rappresenta i dati necessari per creare un ticket
+- TicketResponse rappresenta i dati restituiti come risposta
+- i DTO non devono contenere logica di business
+- le validazioni devono essere coerenti e motivate
+- il DTO di response non deve esporre dettagli interni non necessari
+- gli esempi devono usare solo dati fittizi
+
+## Sezione slide 11 - Repository e configurazione H2/JPA
+
+Messaggio chiave:
+
+La persistenza va introdotta in modo incrementale, semplice e verificabile.
+
+Punti da spiegare:
+
+- TicketRepository usa Spring Data JPA
+- JpaRepository evita implementazioni manuali non necessarie
+- eventuali metodi come findByStatus o findByPriority devono essere motivati
+- non bisogna creare query complesse se non servono
+- la configurazione H2/JPA deve essere adatta a un ambiente didattico
+- non devono comparire credenziali reali, URL aziendali o configurazioni enterprise non richieste
+
+## Sezione slide 12 - Review e verifica della persistenza
+
+Messaggio chiave:
+
+DTO, Repository e configurazione database devono essere verificati insieme.
+
+Punti da spiegare:
+
+- controllare coerenza tra Entity, DTO e Repository
+- controllare la correttezza delle validazioni
+- verificare assenza di dati reali o sensibili
+- verificare assenza di dipendenze inutili
+- controllare la configurazione H2/JPA
+- individuare rischi di overengineering
+- eseguire ./mvnw test dopo le modifiche
+- distinguere cosa e stato generato dall'AI, cosa e stato modificato manualmente e cosa resta da verificare
+
+Checkpoint didattico:
+
+Prima di passare a Service e Controller, il partecipante deve verificare coerenza tra Entity, DTO, Repository e configurazione del database.
+
 ## Da completare dopo la produzione degli altri materiali del Blocco 2
 
-- esercizio 5: integrazione database e persistenza
 - esercizio successivo: pipeline dati ed error handling aziendale
 - esercizio successivo: code review umano vs AI
 - eventuale checklist di chiusura del Blocco 2
