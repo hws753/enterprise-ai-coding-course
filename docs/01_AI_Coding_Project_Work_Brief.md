@@ -62,6 +62,8 @@ Prima di generare la prima Entity, questo e lo schema minimo concettuale del Tic
 
 Questo schema e un punto di partenza didattico, non un requisito rigido: puo essere esteso durante il corso (es. aggiungendo un campo assegnatario) come esercizio di generazione assistita di un nuovo campo/migrazione.
 
+Nota sulla convenzione dei nomi: nel brief i campi sono descritti in italiano per chiarezza didattica. Nel codice Java e nei DTO useremo nomi inglesi coerenti con le convenzioni tecniche del progetto, ad esempio title, description, status, priority, createdAt e updatedAt.
+
 ## Funzionalita minime (dal programma)
 
 - Creazione ticket
