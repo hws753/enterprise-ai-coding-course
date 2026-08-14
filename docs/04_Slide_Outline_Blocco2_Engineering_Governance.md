@@ -22,6 +22,7 @@ Servira piu avanti per costruire le slide del corso, mantenendo coerenza tra:
 
 - exercises/04_assisted_ticket_module_generation.md
 - exercises/05_repository_dto_persistence_ai.md
+- exercises/06_pipeline_error_handling_ai.md
 
 ## Blocco 2 - Obiettivo generale
 
@@ -242,8 +243,92 @@ Checkpoint didattico:
 
 Prima di passare a Service e Controller, il partecipante deve verificare coerenza tra Entity, DTO, Repository e configurazione del database.
 
+## Sezione slide 13 - Pipeline dati applicativa
+
+Fonte analizzata:
+
+- exercises/06_pipeline_error_handling_ai.md
+
+Messaggio chiave:
+
+La pipeline applicativa deve rendere chiaro il passaggio dei dati dalla request alla response, senza confondere responsabilita tra Controller, Service, Repository, Entity e DTO.
+
+Punti da spiegare:
+
+- la request entra attraverso un DTO
+- il Controller riceve la richiesta e delega al Service
+- il Service contiene la logica applicativa principale
+- il Repository gestisce la persistenza
+- l'Entity rappresenta il dato persistito
+- la response deve tornare tramite DTO
+- le Entity non devono essere esposte direttamente verso l'esterno
+
+Schema concettuale da mostrare:
+
+request DTO -> Controller -> Service -> Repository -> Entity -> response DTO
+
+## Sezione slide 14 - Service, Controller e mapping DTO/Entity
+
+Messaggio chiave:
+
+La generazione assistita deve mantenere separate le responsabilita applicative.
+
+Punti da spiegare:
+
+- il Controller non deve contenere logica di business
+- il Service coordina creazione e lettura del ticket
+- il mapping DTO/Entity deve essere semplice e motivato
+- il mapping puo stare nel Service se il progetto resta piccolo e didattico
+- un mapper dedicato va introdotto solo se migliora leggibilita e testabilita
+- non vanno aggiunte librerie come Lombok, MapStruct o ModelMapper senza approvazione esplicita
+- ogni scelta proposta dall'AI deve essere verificata prima di essere accettata
+
+## Sezione slide 15 - Error handling aziendale
+
+Messaggio chiave:
+
+L'error handling deve produrre risposte comprensibili senza esporre dettagli interni.
+
+Punti da spiegare:
+
+- gestire il caso ticket non trovato
+- gestire errori di validazione input
+- prevedere un errore generico controllato
+- usare messaggi comprensibili
+- distinguere errori client ed errori server
+- non esporre stack trace
+- non esporre dettagli interni del database
+- mantenere un formato di risposta coerente
+- evitare una gestione errori troppo complessa per il contesto didattico
+
+Componenti suggeriti nell'esercizio:
+
+- TicketNotFoundException
+- ErrorResponse
+- GlobalExceptionHandler con RestControllerAdvice
+
+## Sezione slide 16 - Review e test della pipeline
+
+Messaggio chiave:
+
+La qualita della pipeline dipende dalla review umana e dalla verifica tecnica, non solo dal codice generato dall'AI.
+
+Punti da spiegare:
+
+- verificare separazione Controller / Service / Repository / DTO
+- controllare il mapping DTO/Entity
+- verificare assenza di Entity esposte direttamente
+- controllare la coerenza delle risposte di errore
+- verificare assenza di dati sensibili nei messaggi
+- controllare che non siano state introdotte dipendenze non richieste
+- eseguire ./mvnw test dopo le modifiche
+- distinguere codice generato, codice modificato manualmente e codice ancora da verificare
+
+Checkpoint didattico:
+
+Prima di passare alla code review umano vs AI, il partecipante deve saper spiegare il flusso request -> Controller -> Service -> Repository -> response e verificare che l'error handling protegga i dettagli interni.
+
 ## Da completare dopo la produzione degli altri materiali del Blocco 2
 
-- esercizio successivo: pipeline dati ed error handling aziendale
 - esercizio successivo: code review umano vs AI
 - eventuale checklist di chiusura del Blocco 2
