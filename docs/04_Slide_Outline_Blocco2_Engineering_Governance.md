@@ -23,6 +23,7 @@ Servira piu avanti per costruire le slide del corso, mantenendo coerenza tra:
 - exercises/04_assisted_ticket_module_generation.md
 - exercises/05_repository_dto_persistence_ai.md
 - exercises/06_pipeline_error_handling_ai.md
+- exercises/07_human_vs_ai_code_review.md
 
 ## Blocco 2 - Obiettivo generale
 
@@ -328,7 +329,84 @@ Checkpoint didattico:
 
 Prima di passare alla code review umano vs AI, il partecipante deve saper spiegare il flusso request -> Controller -> Service -> Repository -> response e verificare che l'error handling protegga i dettagli interni.
 
+## Sezione slide 17 - Code review umano vs AI
+
+Fonte analizzata:
+
+- exercises/07_human_vs_ai_code_review.md
+
+Messaggio chiave:
+
+La review AI e utile solo se ha un perimetro chiaro, criteri espliciti e una validazione umana finale.
+
+Punti da spiegare:
+
+- non bisogna chiedere all'AI una review generica di tutto il progetto
+- la review deve avere un perimetro tecnico preciso
+- il team deve sapere quali classi sta revisionando
+- la review AI deve distinguere problemi certi, ipotesi e suggerimenti
+- la responsabilita tecnica finale resta umana
+- la review AI non equivale ad approvazione del codice
+
+## Sezione slide 18 - Perimetro e checklist di review
+
+Messaggio chiave:
+
+Una review efficace parte da una checklist umana, non solo dal responso dell'AI.
+
+Punti da spiegare:
+
+- verificare TicketService, TicketController, GlobalExceptionHandler, DTO ed eventuale mapper
+- controllare separazione Controller / Service / Repository / DTO
+- verificare che le Entity non siano esposte direttamente
+- controllare che non siano presenti stack trace o dettagli interni nelle risposte
+- verificare assenza di dipendenze non richieste
+- controllare che i test coprano i casi principali
+- distinguere codice generato dall'AI e codice modificato manualmente
+
+## Sezione slide 19 - Confronto tra review AI e review umana
+
+Messaggio chiave:
+
+Il valore didattico della review nasce dal confronto critico tra output AI e giudizio umano.
+
+Punti da spiegare:
+
+- l'AI puo individuare problemi reali
+- l'AI puo produrre falsi positivi
+- l'AI puo ignorare rischi importanti
+- la review umana deve confermare, correggere o integrare la review AI
+- ogni punto emerso va classificato prima di essere accettato
+
+Categorie decisionali:
+
+- da correggere subito
+- da verificare meglio
+- da rimandare
+- suggerimento non necessario
+- falso positivo dell'AI
+- rischio non rilevato dall'AI ma individuato dalla review umana
+
+## Sezione slide 20 - Decisioni motivate e test finali
+
+Messaggio chiave:
+
+Ogni modifica accettata dopo una review deve essere motivata, verificata e collegata a test o controlli manuali.
+
+Punti da spiegare:
+
+- indicare il problema individuato
+- indicare se la segnalazione arriva dall'AI, dall'umano o da entrambi
+- motivare la decisione presa
+- evitare modifiche automatiche non comprese
+- non applicare refactoring non necessari
+- eseguire ./mvnw test dopo eventuali modifiche
+- documentare cosa e stato corretto, cosa e stato rimandato e cosa resta da verificare
+
+Checkpoint didattico:
+
+Prima di chiudere il Blocco 2, il partecipante deve saper usare la review AI come supporto critico, confrontarla con una checklist umana e motivare ogni decisione tecnica.
+
 ## Da completare dopo la produzione degli altri materiali del Blocco 2
 
-- esercizio successivo: code review umano vs AI
 - eventuale checklist di chiusura del Blocco 2
