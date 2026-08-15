@@ -21,6 +21,7 @@ Servira piu avanti per costruire le slide del corso, mantenendo coerenza tra:
 ## Fonti gia analizzate
 
 - exercises/08_performance_costs_ai_coding.md
+- exercises/09_personal_skill_skills_sh.md
 
 ## Blocco 3 - Obiettivo generale
 
@@ -151,8 +152,119 @@ Punti da verificare in aula:
 - i partecipanti motivano le decisioni accettate, rimandate o rifiutate
 - i partecipanti collegano eventuali modifiche a test o misurazioni
 
+## Sezione slide 7 - Skill personale: rendere riutilizzabile il metodo
+
+Fonte analizzata:
+
+- exercises/09_personal_skill_skills_sh.md
+
+Messaggio chiave:
+
+La skill personale serve a trasformare il metodo di lavoro del corso in istruzioni riutilizzabili per l'assistente AI.
+
+Punti da spiegare:
+
+- la skill non serve a delegare responsabilita all'AI
+- la skill deve guidare prompt, sviluppo, review e documentazione
+- la skill deve rispettare project work, stack tecnico e vincoli di sicurezza
+- la skill deve indicare cosa l'AI puo fare e cosa non deve fare
+- la skill deve essere verificabile, leggibile e riutilizzabile nel project finale
+
+## Sezione slide 8 - Estrarre regole dai materiali del corso
+
+Messaggio chiave:
+
+Una buona skill nasce dalla sintesi dei materiali gia prodotti, non da istruzioni generiche.
+
+Punti da spiegare:
+
+- recuperare regole dal project work brief
+- recuperare regole dalla safety checklist
+- recuperare regole dalla engineering governance checklist
+- recuperare regole dagli esercizi su generazione, persistenza, pipeline e review
+- integrare le regole su performance e costi
+- trasformare regole sparse in istruzioni operative coerenti
+
+Categorie da estrarre:
+
+- prompt engineering
+- sicurezza
+- architettura
+- generazione incrementale
+- persistenza
+- error handling
+- review
+- performance e costi
+- test
+
+## Sezione slide 9 - Struttura minima della skill
+
+Messaggio chiave:
+
+La skill deve avere una struttura chiara: scopo, contesto, regole operative, limiti e criteri di accettazione.
+
+Punti da spiegare:
+
+- dichiarare lo scopo della skill
+- indicare il contesto del project work Ticket Management API
+- indicare lo stack Java 21 e Spring Boot
+- definire il comportamento atteso dell'assistente AI
+- includere regole di sicurezza
+- includere regole di generazione codice
+- includere regole di review
+- includere attenzione a performance e costi
+- dichiarare limiti e cosa non fare
+
+## Sezione slide 10 - skills.md e skills.sh
+
+Messaggio chiave:
+
+skills.md e il documento principale per chiarezza didattica; skills.sh va usato solo se ha senso nel contesto.
+
+Punti da spiegare:
+
+- skills.md contiene istruzioni leggibili e riutilizzabili
+- skills.sh e opzionale e deve essere motivato
+- skills.sh puo essere un wrapper o uno script dimostrativo
+- lo script non deve contenere credenziali, token o chiavi API
+- lo script non deve eseguire comandi distruttivi
+- lo script non deve installare dipendenze o inviare dati all'esterno
+- la parte documentale resta piu importante della parte eseguibile
+
+## Sezione slide 11 - Review e accettazione della skill
+
+Messaggio chiave:
+
+Una skill personale va revisionata come qualsiasi altro artefatto generato con AI.
+
+Punti da spiegare:
+
+- verificare chiarezza dello scopo
+- verificare coerenza con il project work
+- verificare coerenza con lo stack Spring Boot
+- verificare presenza di regole di sicurezza
+- verificare presenza di regole di review
+- verificare presenza di limiti espliciti
+- verificare assenza di dati sensibili
+- verificare assenza di istruzioni rischiose
+- verificare riutilizzabilita nel project finale
+
+## Sezione slide 12 - Checkpoint docente dell'Esercizio 9
+
+Messaggio chiave:
+
+La skill personale e un artefatto di sintesi: rende riutilizzabile il metodo, ma non sostituisce review e responsabilita umana.
+
+Punti da verificare in aula:
+
+- i partecipanti hanno distinto skills.md e skills.sh
+- i partecipanti sanno spiegare perche skills.md e il documento principale
+- i partecipanti hanno incluso regole di sicurezza e review
+- i partecipanti hanno indicato cosa l'AI non deve fare
+- i partecipanti hanno evitato credenziali, token e comandi rischiosi
+- i partecipanti sanno collegare la skill al project finale
+
 ## Da completare dopo la produzione degli altri materiali del Blocco 3
 
-- esercizio successivo: skill personale e skills.sh
 - esercizio successivo: project finale applicativo + skill
 - eventuale checklist di chiusura del Blocco 3
