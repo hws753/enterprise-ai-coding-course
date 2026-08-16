@@ -188,16 +188,16 @@ Esempio di struttura Markdown:
 
 ## Task 5 - Skills.md e skills.sh
 
-Nel programma ufficiale compare skills.sh.
+Nel programma ufficiale compare skills.sh come deliverable della skill personale.
 
-Per chiarezza didattica, il partecipante deve produrre:
+Per chiarezza didattica e piena aderenza al sillabus, il partecipante deve produrre entrambi i file:
 
-- skills.md come versione leggibile e documentata della skill
-- skills.sh solo se il contesto tecnico richiede anche un file eseguibile o dimostrativo
+- skills.md come versione leggibile, documentata e principale della skill
+- skills.sh come script minimo obbligatorio, sicuro, non distruttivo e privo di credenziali
 
-Il file skills.md contiene le istruzioni riutilizzabili.
+Il file skills.md contiene le istruzioni riutilizzabili e resta il riferimento operativo principale.
 
-Il file skills.sh puo essere usato come wrapper o file dimostrativo, ad esempio per stampare o preparare il contenuto della skill.
+Il file skills.sh deve essere semplice e dimostrativo: puo stampare un riferimento a skills.md, verificare prerequisiti minimi o mostrare come richiamare la skill, senza automatizzare operazioni rischiose.
 
 Non inserire nel file skills.sh:
 
@@ -211,7 +211,7 @@ Non inserire nel file skills.sh:
 
 ## Task 6 - Esempio minimo di skills.sh sicuro
 
-Se viene creato skills.sh, deve essere semplice, leggibile e non distruttivo.
+Il file skills.sh deve essere semplice, leggibile, obbligatorio e non distruttivo.
 
 Esempio didattico minimo:
 
@@ -265,7 +265,7 @@ Prima di considerare valida la skill, verifica:
 
 ## Task 9 - Verifica tecnica
 
-Se viene creato skills.sh, esegui:
+Per verificare skills.sh, esegui:
 
 ```bash
 chmod +x skills.sh
@@ -280,7 +280,7 @@ Prima analizza:
 - riga coinvolta
 - causa probabile
 - modifica minima necessaria
-- se lo script e davvero necessario o se basta skills.md
+- se lo script resta minimo, sicuro e coerente con skills.md
 
 ## Output atteso
 
@@ -288,7 +288,7 @@ Al termine dell'esercizio devono essere presenti:
 
 1. prompts/09_personal_skill_prompt.md
 2. skills.md
-3. eventuale skills.sh, solo se motivato
+3. skills.sh minimo obbligatorio, sicuro e non distruttivo
 4. review AI della skill
 5. checklist di accettazione compilata
 6. nota finale su cosa e stato incluso, escluso o rimandato
@@ -298,7 +298,7 @@ Il file prompts/09_personal_skill_prompt.md deve contenere:
 - prompt per generare la skill
 - prompt per revisionare la skill
 - checklist di accettazione
-- criteri per decidere se usare skills.md, skills.sh o entrambi
+- criteri per mantenere coerenti skills.md e skills.sh
 - nota sui limiti della skill personale
 
 ## Criteri di valutazione / autoverifica
@@ -311,7 +311,7 @@ Il file prompts/09_personal_skill_prompt.md deve contenere:
 - [ ] La skill guida l'AI senza sostituire la review umana
 - [ ] La skill e coerente con il project work
 - [ ] La skill e riutilizzabile nel project finale
-- [ ] Ho motivato se usare skills.md, skills.sh o entrambi
+- [ ] Ho prodotto sia skills.md sia skills.sh minimo e sicuro
 
 ## Errori comuni da evitare
 
@@ -320,6 +320,7 @@ Il file prompts/09_personal_skill_prompt.md deve contenere:
 - Inserire comandi shell non necessari
 - Inserire credenziali o token
 - Rendere skills.sh piu importante di skills.md
+- Trattare skills.sh come facoltativo nonostante sia richiesto dal sillabus
 - Usare la skill come sostituto della review umana
 - Non specificare cosa l'AI non deve fare
 - Non verificare la leggibilita della skill
@@ -330,5 +331,5 @@ Il file prompts/09_personal_skill_prompt.md deve contenere:
 Durante il confronto in aula, verificare che i partecipanti abbiano capito questi tre punti:
 
 1. una skill personale serve a rendere riutilizzabile il metodo di lavoro, non a delegare responsabilita all'AI
-2. skills.md e il documento principale per chiarezza didattica; skills.sh va usato solo se ha senso nel contesto
+2. skills.md e il documento principale per chiarezza didattica; skills.sh e un deliverable minimo obbligatorio, sicuro e non distruttivo
 3. una buona skill contiene anche limiti, divieti, criteri di review e controlli di sicurezza
