@@ -22,6 +22,7 @@ Servira piu avanti per costruire le slide del corso, mantenendo coerenza tra:
 
 - exercises/08_performance_costs_ai_coding.md
 - exercises/09_personal_skill_skills_sh.md
+- exercises/10_final_project_applicativo_skill.md
 
 ## Blocco 3 - Obiettivo generale
 
@@ -264,7 +265,137 @@ Punti da verificare in aula:
 - i partecipanti hanno evitato credenziali, token e comandi rischiosi
 - i partecipanti sanno collegare la skill al project finale
 
+## Sezione slide 13 - Project finale: applicativo + skill
+
+Fonte analizzata:
+
+- exercises/10_final_project_applicativo_skill.md
+
+Messaggio chiave:
+
+Il project finale deve dimostrare metodo, non solo quantita di codice prodotto.
+
+Punti da spiegare:
+
+- il project finale consolida il Ticket Management API
+- l'obiettivo non e aggiungere molte funzionalita nuove
+- il focus e mostrare un processo completo di Enterprise AI Coding
+- l'AI deve supportare sviluppo, review e documentazione
+- le decisioni finali restano responsabilita dello sviluppatore
+- il risultato deve essere coerente, verificabile e presentabile
+
+## Sezione slide 14 - Perimetro e backlog minimo
+
+Messaggio chiave:
+
+Un project finale sostenibile nasce da un perimetro realistico e da un backlog minimo.
+
+Punti da spiegare:
+
+- distinguere funzionalita presenti, incomplete e rimandate
+- classificare gli elementi in obbligatorio, utile, opzionale e fuori scope
+- evitare una lista infinita di funzionalita
+- scegliere una sola funzionalita da completare o rifinire con l'AI
+- motivare le funzionalita escluse
+- collegare ogni decisione a una verifica
+
+Elementi consigliati:
+
+- creazione ticket
+- lettura ticket
+- lista ticket
+- aggiornamento stato
+- ricerca o filtro
+- validazione input
+- error handling
+- README finale
+- prompt library
+- skills.md
+- skills.sh minimo obbligatorio
+
+## Sezione slide 15 - Usare skill personale e skills.sh nel project finale
+
+Messaggio chiave:
+
+skills.md, skills.sh e prompt library sono deliverable centrali, non allegati secondari.
+
+Punti da spiegare:
+
+- skills.md guida il lavoro dell'assistente AI
+- skills.sh e un deliverable minimo obbligatorio, sicuro e non distruttivo
+- skills.sh deve essere coerente con skills.md
+- la skill deve includere regole di sicurezza, review, performance e costi
+- la skill non sostituisce la review umana
+- il project finale deve dimostrare che la skill e davvero utilizzabile
+
+## Sezione slide 16 - README finale e prompt library
+
+Messaggio chiave:
+
+La documentazione finale rende verificabile il lavoro svolto e il modo in cui e stata usata l'AI.
+
+Punti da spiegare:
+
+- il README deve spiegare obiettivo, stack, funzionalita e avvio del progetto
+- il README deve indicare come eseguire i test
+- il README deve documentare come e stata usata l'AI
+- la prompt library deve raccogliere prompt strutturati e riutilizzabili
+- ogni prompt deve indicare scopo, contesto, output atteso, vincoli e controlli umani
+- non devono comparire credenziali, token, URL aziendali reali o dati sensibili
+
+## Sezione slide 17 - Rubrica di valutazione del project finale
+
+Messaggio chiave:
+
+La valutazione finale deve considerare applicativo, skill, prompt, sicurezza, test, documentazione e decisioni tecniche.
+
+Punti da spiegare:
+
+- valutare il perimetro realistico
+- valutare le funzionalita implementate e verificabili
+- valutare l'uso dell'AI con prompt mirati
+- valutare skills.md e skills.sh
+- valutare sicurezza e assenza di dati reali
+- valutare review AI + review umana
+- valutare test e documentazione
+- valutare decisioni tecniche motivate
+- valutare presentazione finale e limiti dichiarati
+
+## Sezione slide 18 - Presentazione finale e retrospettiva
+
+Messaggio chiave:
+
+La restituzione finale deve mostrare cosa e stato costruito, come e stata usata l'AI e quali controlli umani sono stati indispensabili.
+
+Punti da spiegare:
+
+- spiegare obiettivo del progetto
+- spiegare stack e project work
+- mostrare come e stata usata l'AI
+- indicare rischi controllati
+- indicare prompt piu utili
+- indicare suggerimenti AI rifiutati
+- indicare cosa ha richiesto review umana
+- indicare cosa resta fuori scope
+- spiegare come la skill personale aiuta nel lavoro successivo
+
+## Sezione slide 19 - Checkpoint docente dell'Esercizio 10
+
+Messaggio chiave:
+
+Il valore dell'Enterprise AI Coding sta nella capacita di usare AI, review umana, test e documentazione come un unico processo governato.
+
+Punti da verificare in aula:
+
+- i partecipanti hanno definito un perimetro realistico
+- i partecipanti non hanno chiesto all'AI di completare tutto il progetto
+- i partecipanti hanno usato skills.md come riferimento operativo
+- i partecipanti hanno prodotto skills.sh minimo obbligatorio e sicuro
+- i partecipanti hanno organizzato README e prompt library
+- i partecipanti hanno applicato review AI e review umana
+- i partecipanti hanno eseguito o documentato i test
+- i partecipanti hanno compilato rubrica, checklist e retrospettiva
+
 ## Da completare dopo la produzione degli altri materiali del Blocco 3
 
-- esercizio successivo: project finale applicativo + skill
 - eventuale checklist di chiusura del Blocco 3
