@@ -1,3 +1,8 @@
+Nota didattica:
+Questo file e un esempio di riferimento per docente/progettista.
+Non e l'elaborato dello studente.
+Durante l'esercizio, il partecipante dovra produrre il proprio file nella cartella prompts/.
+
 # Prompt 01 - Struttura modulo Ticket
 
 ## Scopo
