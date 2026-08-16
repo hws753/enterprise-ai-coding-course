@@ -219,13 +219,13 @@ Punti da spiegare:
 
 Messaggio chiave:
 
-skills.md e il documento principale per chiarezza didattica; skills.sh va usato solo se ha senso nel contesto.
+skills.md e il documento principale per chiarezza didattica; skills.sh e un deliverable minimo obbligatorio, sicuro e non distruttivo.
 
 Punti da spiegare:
 
 - skills.md contiene istruzioni leggibili e riutilizzabili
-- skills.sh e opzionale e deve essere motivato
-- skills.sh puo essere un wrapper o uno script dimostrativo
+- skills.sh e un deliverable minimo obbligatorio, sicuro e non distruttivo
+- skills.sh puo essere un wrapper o uno script dimostrativo minimo
 - lo script non deve contenere credenziali, token o chiavi API
 - lo script non deve eseguire comandi distruttivi
 - lo script non deve installare dipendenze o inviare dati all'esterno
