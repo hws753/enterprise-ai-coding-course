@@ -63,8 +63,7 @@ Durante il corso i partecipanti lavorano in modo incrementale su:
 
 ## Struttura del repository
 
-- docs/: documentazione didattica, checklist, outline slide e guide docente
-- docs/reference_prompts/: esempi di prompt strutturati per docente/progettista
+- docs/: documentazione didattica, checklist e outline slide
 - exercises/: esercitazioni progressive del corso
 - prompts/: spazio di lavoro dei partecipanti per la propria prompt library
 - project/ticket-api/: project work applicativo usato durante le esercitazioni
@@ -94,19 +93,20 @@ Blocco 3 - Performance, Costi, Skills:
 
 Il corso prevede una libreria di prompt strutturati.
 
-Nel repository sono presenti due aree distinte:
+In questo repository i prompt si producono in:
 
-- docs/reference_prompts/: esempi di riferimento per docente/progettista
 - prompts/: spazio di lavoro degli studenti
 
-I reference prompt non sostituiscono il lavoro dei partecipanti. Servono come esempi di qualità, confronto e supporto alla conduzione didattica.
+Ogni esercizio chiede di scrivere un prompt e di salvarlo qui. Al termine del percorso la cartella costituisce la propria prompt library riutilizzabile.
+
+Il docente dispone di prompt di riferimento su ciascun esercizio, che vengono mostrati e discussi in aula solo dopo la produzione autonoma: servono al confronto, non sostituiscono il lavoro dei partecipanti.
 
 ## Skill personale
 
 Il percorso prevede la produzione di una skill personale composta da:
 
-- skills.md: documento principale, leggibile e riutilizzabile
-- skills.sh: script minimo obbligatorio, sicuro e non distruttivo
+- skills.md: file Markdown riutilizzabile, leggibile e complementare
+- skills.sh: deliverable obbligatorio della skill personale, sicuro e non distruttivo
 
 La skill deve aiutare l'assistente AI a rispettare contesto, vincoli, sicurezza, review umana, test e governance tecnica.
 
@@ -164,6 +164,6 @@ Al termine del percorso i partecipanti devono produrre:
 
 ## Nota didattica
 
-Questo repository e pensato come materiale di supporto alla docenza.
+Questo repository e la base di lavoro dei partecipanti al corso.
 
-Gli esempi presenti in docs/reference_prompts/ sono modelli di riferimento per il docente/progettista. Gli studenti devono produrre i propri elaborati nelle cartelle indicate dagli esercizi.
+Non contiene soluzioni: il modulo Ticket, la skill personale e i prompt vanno prodotti durante le esercitazioni, nelle cartelle indicate da ciascun esercizio. Il materiale di riferimento del docente resta separato e viene usato in aula solo dopo la produzione autonoma.

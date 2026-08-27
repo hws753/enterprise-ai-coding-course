@@ -2,7 +2,7 @@
 
 ## Stato
 
-Documento di lavoro - prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro - esercitazione operativa del corso Enterprise AI Coding.
 
 ## Blocco del programma
 
@@ -34,7 +34,7 @@ Il project work resta un laboratorio di Enterprise AI Coding. Spring Boot e il c
 - project/ticket-api/pom.xml
 - project/ticket-api/src/main/java/com/example/ticketapi/TicketApiApplication.java
 
-Nota: al momento lo starter Spring Boot contiene solo la classe principale dell'applicazione, il file application.properties e il test base. I componenti del modulo Ticket non sono ancora presenti e verranno generati in modo incrementale.
+Nota: nel repository pubblico studenti, usato come starter del corso, il progetto Spring Boot contiene solo la classe principale dell'applicazione, il file application.properties e il test base. I componenti del modulo Ticket non sono ancora presenti e verranno generati in modo incrementale. Nel repository privato docente, invece, la solution reference contiene già il modulo completo e non va mostrata agli studenti durante l'esercitazione.
 
 ## Scenario
 

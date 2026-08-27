@@ -1,7 +1,7 @@
 # AI Coding Project Work Brief — Ticket Management API
 
 ## Stato
-Documento di lavoro — prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro — in aggiornamento.
 
 ## Cos'è questo documento
 Questo brief definisce lo scopo, i confini e le regole d'ingaggio del project work del corso **Enterprise AI Coding**. Non è un documento tecnico su Spring Boot: è la guida che stabilisce *come* userete l'AI per costruire, verificare e documentare la Ticket Management API, non *cosa* imparerete di Spring Boot in sé.
@@ -20,13 +20,15 @@ Ogni esercitazione, ogni modulo di codice, ogni prompt scritto durante il corso 
 
 ## Collegamento con il programma ufficiale
 
-Questo project work è il filo conduttore che attraversa i tre blocchi del programma Protom:
+Questo project work è il filo conduttore che attraversa i tre Blocchi del programma Protom:
 
 | Blocco del programma | Come si applica al project work |
 |---|---|
-| AI Coding Foundations & Sicurezza | Setup ambiente (Codespaces), prompt engineering su moduli del Ticket, esercizi di prompt injection/data leakage usando dati fittizi del progetto, valutazione di design pattern applicabili (es. Strategy per la gestione stati ticket) |
+| AI Coding Foundations & Sicurezza | Setup ambiente (Codespaces), prompt engineering su moduli del Ticket, esercizi di prompt injection/data leakage usando dati fittizi del progetto, valutazione di design pattern applicabili alla gestione stati ticket, confrontando piu alternative (approfondito nella Sessione 3) |
 | Engineering e Integrazione & Governance | Generazione assistita di Entity/Service/Controller, integrazione con H2/PostgreSQL, pipeline di validazione ed error handling, code review umano vs AI sul codice generato |
 | Performance, Costi, Skills | Analisi performance del codice generato, riflessione su costi di token/review/debito tecnico, produzione della skill personale basata sull'esperienza sul project work |
+
+Non dichiarati esplicitamente nel PDF ufficiale, ma scelte progettuali interne coerenti con il corso: GitHub Codespaces, Java 21, Spring Boot, H2/PostgreSQL, Ticket Management API e la struttura applicativa usata nel project work.
 
 ## Ruolo degli strumenti AI nel project work
 
@@ -55,7 +57,7 @@ Prima di generare la prima Entity, questo e lo schema minimo concettuale del Tic
 | id | Long | generato automaticamente |
 | titolo | String | obbligatorio, lunghezza minima/massima da validare |
 | descrizione | String | opzionale |
-| stato | Enum (es. APERTO, IN_LAVORAZIONE, CHIUSO) | valore di default: APERTO |
+| stato | Enum (es. APERTO, IN_LAVORAZIONE, RISOLTO, CHIUSO) | valore di default: APERTO |
 | priorita | Enum (es. BASSA, MEDIA, ALTA) | opzionale, default MEDIA |
 | dataCreazione | LocalDateTime | generata automaticamente alla creazione |
 | dataAggiornamento | LocalDateTime | aggiornata a ogni modifica |
@@ -64,15 +66,17 @@ Questo schema e un punto di partenza didattico, non un requisito rigido: puo ess
 
 Nota sulla convenzione dei nomi: nel brief i campi sono descritti in italiano per chiarezza didattica. Nel codice Java e nei DTO useremo nomi inglesi coerenti con le convenzioni tecniche del progetto, ad esempio title, description, status, priority, createdAt e updatedAt.
 
-## Funzionalita minime (dal programma)
+## Funzionalita minime (scelta progettuale del project work)
 
 - Creazione ticket
 - Lettura ticket (singolo e lista)
 - Aggiornamento stato ticket
-- Ricerca ticket (per stato, priorita, o testo libero nel titolo)
+- Ricerca ticket (per stato o priorita)
 - Persistenza su database (H2 per le demo in aula; PostgreSQL resta citato solo come riferimento concettuale enterprise, non verra configurato in aula)
 - Validazione input (es. titolo obbligatorio, stato tra valori ammessi)
 - Gestione centralizzata degli errori (es. TicketNotFoundException, risposta HTTP coerente)
+
+Nota: la ricerca testuale libera sul titolo non e inclusa nella solution reference minima; puo essere indicata come estensione opzionale/fuori scope nel project finale (Blocco 3).
 
 ## Vincoli di sicurezza e dati
 
@@ -118,15 +122,16 @@ La review va condotta prima con l'AI (Claude o Copilot Chat), poi validata da un
 - README del progetto (bozza in Copilot, rifinitura in Claude)
 - Prompt library aggiornata in prompts/
 - Checklist di sicurezza AI coding applicata al progetto
-- Skill personale che raccoglie i pattern di prompt e le lezioni apprese durante lo sviluppo
+- File istruzioni Markdown riutilizzabile: skills.md
+- Skill personale documentata: skills.sh
 
 ## Nota su skills.sh / skills.md
 
-Coerentemente con la scheda base del corso, la skill personale del project work viene prodotta come ipotesi di lavoro in formato skills.md, in attesa di conferma dal committente sul formato richiesto (skills.sh vs skills.md).
+Nel project work, skills.sh e il deliverable obbligatorio della skill personale richiesto esplicitamente dal sillabus; skills.md e il file Markdown riutilizzabile adottato internamente dal progetto e affianca skills.sh senza sostituirlo.
 
 ## Cosa NON deve succedere durante il project work
 
 - Spiegare in dettaglio la sintassi o le annotazioni Spring Boot come se fosse un corso framework-oriented
 - Accettare codice generato dall'AI senza lettura o verifica
 - Usare dati, credenziali o log reali negli esempi
-- Trattare il project work come attivita isolata dagli altri moduli del programma (deve restare il filo conduttore)
+- Trattare il project work come attivita isolata dagli altri Blocchi del programma (deve restare il filo conduttore)

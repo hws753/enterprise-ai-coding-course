@@ -2,11 +2,11 @@
 
 ## Stato
 
-Documento di lavoro - prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro — in aggiornamento.
 
 ## Scopo del documento
 
-Questa checklist chiude il primo blocco del corso Enterprise AI Coding dedicato a:
+Questa checklist chiude il primo Blocco del corso Enterprise AI Coding dedicato a:
 
 - setup dell'ambiente
 - prompt engineering avanzato
@@ -14,6 +14,8 @@ Questa checklist chiude il primo blocco del corso Enterprise AI Coding dedicato 
 - data leakage
 - uso controllato degli assistenti AI
 - design pattern e refactoring assistito
+
+Il sillabus ufficiale include setup aziendale, prompt engineering avanzato, prompt injection, data leakage e Design Pattern. Il refactoring assistito, l'uso controllato degli assistenti AI e il Ticket Management API come contesto operativo sono scelte didattiche interne del repository.
 
 La checklist serve come controllo rapido prima di usare Copilot o Claude per generare, analizzare, revisionare o documentare codice nel project work Ticket Management API.
 

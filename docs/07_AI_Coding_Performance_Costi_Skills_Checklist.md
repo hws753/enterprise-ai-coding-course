@@ -6,7 +6,17 @@ Documento di lavoro - checklist finale di chiusura del Blocco 3.
 
 ## Scopo del documento
 
-Questa checklist chiude il terzo blocco del corso Enterprise AI Coding dedicato a:
+Questa checklist chiude il terzo Blocco del corso Enterprise AI Coding.
+
+Il Blocco 3 e articolato internamente in una Sessione da 4 ore:
+
+- Sessione 6 - Performance, costi, skill personale e project finale
+
+Il totale del Blocco 3 e di 4 ore.
+
+Il sillabus ufficiale definisce performance e costi, skill personale (skills.sh), project finale: applicativo + skill e i quattro deliverable ufficiali: repository di progetto con README, file istruzioni Markdown riutilizzabile, skill personale documentata (skills.sh) e libreria di prompt strutturati. Java 21, Spring Boot, H2, GitHub Codespaces, Ticket Management API, skills.md come nome del file Markdown interno, la struttura interna della prompt library, rubriche/checklist operative e la presentazione finale sono scelte didattiche interne del repository e non dati dichiarati dal PDF ufficiale.
+
+La checklist copre i seguenti temi:
 
 - performance e costi
 - skill personale documentata
@@ -16,6 +26,8 @@ Questa checklist chiude il terzo blocco del corso Enterprise AI Coding dedicato 
 - prompt library strutturata
 - rubrica di valutazione
 - presentazione e retrospettiva finale
+
+Nel progetto, skills.sh e il deliverable obbligatorio della skill personale richiesto esplicitamente dal sillabus; skills.md e il file Markdown riutilizzabile adottato internamente e affianca skills.sh senza sostituirlo.
 
 La checklist serve a verificare che il project finale non sia solo codice funzionante, ma un insieme coerente di applicativo, metodo AI Coding, skill, documentazione, test e decisioni tecniche motivate.
 
@@ -77,10 +89,10 @@ Durante la riflessione sull'uso degli assistenti AI, verifica:
 - [ ] Ho considerato le risposte AI scartate
 - [ ] Ho riconosciuto dove l'AI ha accelerato il lavoro
 - [ ] Ho riconosciuto dove l'AI ha creato lavoro aggiuntivo
-- [ ] Ho evitato tariffe reali non verificate o non aggiornate
+- [ ] L'analisi resta qualitativa e metodologica: non uso prezzi o tariffe reali dei provider
 - [ ] Ho ragionato sul costo operativo del processo, non solo sul costo economico
 
-## 4. Skill personale
+## 4. File istruzioni Markdown riutilizzabile: skills.md
 
 Prima di considerare valida la skill personale, verifica:
 
@@ -115,6 +127,7 @@ Prima di consegnare skills.sh, verifica:
 Prima di completare il project finale, verifica:
 
 - [ ] Il perimetro finale e realistico
+- [ ] L'eventuale estensione del project finale e limitata a una sola funzionalita aggiuntiva
 - [ ] Il backlog distingue elementi obbligatori, utili, opzionali e fuori scope
 - [ ] Le funzionalita essenziali sono state individuate
 - [ ] Le funzionalita rimandate sono motivate
@@ -148,6 +161,10 @@ Prima della consegna, verifica:
 - [ ] I problemi non risolti sono stati documentati
 - [ ] Non ho chiesto all'AI di correggere tutto senza analisi
 - [ ] Ho distinto errori di codice generato e problemi di integrazione manuale
+
+## Nota operativa sulla chiusura della Sessione 6
+
+Nel tempo disponibile in aula devono essere prodotti e verificati gli elementi essenziali del project finale, inclusi skills.md e skills.sh, e deve essere svolto il checkpoint finale del corso. La rifinitura completa del README, della prompt library e dei prompt 09 e 10 puo essere completata dopo la Sessione 6 senza modificare i requisiti finali di consegna.
 
 ## 9. README finale
 
@@ -210,7 +227,7 @@ Prima della restituzione finale, verifica:
 
 - Ottimizzare senza evidenze
 - Accettare suggerimenti AI senza review
-- Rendere skills.sh piu importante di skills.md
+- Trattare skills.md come sostitutivo di skills.sh
 - Considerare skills.sh facoltativo
 - Inserire credenziali o token nei deliverable
 - Usare comandi distruttivi in skills.sh
@@ -237,8 +254,9 @@ Prima di chiudere il corso, verifica:
 
 ## Checkpoint docente
 
-Durante la chiusura del Blocco 3, verificare che i partecipanti abbiano capito questi tre punti:
+Durante la chiusura del Blocco 3, verificare che i partecipanti abbiano capito questi quattro punti:
 
 1. il project finale deve dimostrare metodo, non solo quantita di codice prodotto
 2. skills.md, skills.sh, README e prompt library sono deliverable centrali
-3. il valore dell'Enterprise AI Coding sta nell'integrare AI, review umana, test, documentazione e governance in un unico processo
+3. il valore dell'Enterprise AI Coding sta nell'integrare prompt engineering, sicurezza, generazione incrementale, persistenza, pipeline, error handling, test, review AI, review umana, governance, performance, costi, skill personale e project finale in un unico processo
+4. la responsabilita finale delle decisioni tecniche resta umana

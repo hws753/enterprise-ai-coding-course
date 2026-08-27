@@ -8,6 +8,16 @@ Documento di lavoro - raccolta progressiva dei punti da trasformare in slide.
 
 Questo file raccoglie i nuclei teorici, le scelte didattiche e i messaggi chiave emersi dai materiali del Blocco 1.
 
+Il Blocco 1 e articolato internamente in tre Sessioni da 4 ore ciascuna:
+
+- Sessione 1 - Setup e prompt engineering
+- Sessione 2 - Sicurezza, Prompt Injection e Data Leakage
+- Sessione 3 - Design Pattern e integrazione assistita
+
+Il setup aziendale previsto dal sillabus e trattato nella Sessione 1; il dettaglio operativo resta nel relativo outline di Sessione.
+
+Il sillabus ufficiale definisce i temi del Blocco 1; Java 21, Spring Boot, H2, GitHub Codespaces, Ticket Management API e refactoring assistito sono scelte didattiche interne del repository e non dati dichiarati dal PDF ufficiale.
+
 Non e ancora una presentazione definitiva.
 
 Servira piu avanti per costruire le slide del corso, mantenendo coerenza tra:
@@ -336,7 +346,7 @@ Prima di passare alla generazione assistita dei moduli applicativi, il partecipa
 
 ## Stato scaletta Blocco 1
 
-La scaletta del Blocco 1 ora integra:
+La scaletta consolidata del Blocco 1 comprende:
 
 - esercizio 1: prompt engineering applicato all'AI Coding
 - esercizio 2: data leakage e prompt injection

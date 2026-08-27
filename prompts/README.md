@@ -4,12 +4,10 @@ Questa cartella e dedicata alla libreria di prompt strutturati prodotta dai part
 
 I file presenti in questa cartella rappresentano il deliverable operativo degli studenti.
 
-Gli esempi di riferimento per docente/progettista sono invece nella cartella:
-
-- docs/reference_prompts/
+Ogni esercizio indica il nome del file da produrre qui, da 01 a 10. Al termine del corso questa cartella e la propria prompt library, uno dei deliverable finali richiesti.
 
 Regola didattica:
 
 - prompts/ contiene gli elaborati prodotti durante le esercitazioni
-- docs/reference_prompts/ contiene esempi risolti o modelli di confronto
-- gli esempi non sostituiscono il lavoro dello studente
+- il docente dispone di prompt di riferimento su ciascun esercizio, mostrati in aula solo dopo la produzione autonoma
+- i prompt di riferimento servono al confronto e non sostituiscono il lavoro dello studente

@@ -1,7 +1,7 @@
 # Esercizio 2 - Data leakage e prompt injection nella Ticket Management API
 
 ## Stato
-Documento di lavoro - prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro - esercitazione operativa del corso Enterprise AI Coding.
 
 ## Blocco del programma
 AI Coding Foundations & Sicurezza - Prompt injection e data leakage.

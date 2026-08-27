@@ -1,7 +1,7 @@
 # Esercizio 3 - Design Pattern e refactoring assistito con AI
 
 ## Stato
-Documento di lavoro - prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro - esercitazione operativa del corso Enterprise AI Coding.
 
 ## Blocco del programma
 AI Coding Foundations & Sicurezza - Design Pattern: creazione, utilizzo e integrazione in progetti esistenti.

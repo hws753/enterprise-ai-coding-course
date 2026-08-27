@@ -2,7 +2,7 @@
 
 ## Stato
 
-Documento di lavoro - prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro - esercitazione operativa del corso Enterprise AI Coding.
 
 ## Blocco del programma
 
@@ -36,7 +36,7 @@ Devono quindi essere gia presenti e verificati:
 - TicketPriority.java
 - Ticket.java
 
-Nel repository docente questi file non sono presenti di default: vengono generati dagli studenti durante l'Esercizio 4.
+Nel repository pubblico studenti questi file non sono presenti nello starter iniziale: vengono generati e verificati durante l'Esercizio 4. Nel repository privato docente, invece, la solution reference li contiene già e non va usata come base operativa dell'esercitazione.
 
 ## File coinvolti
 
@@ -60,13 +60,13 @@ Il file pom.xml contiene gia le dipendenze necessarie per lavorare su persistenz
 - H2 Console
 - dipendenze di test per JPA, Validation e Web MVC
 
-Il file application.properties contiene attualmente solo:
+Nel repository pubblico studenti, il file application.properties dello starter contiene inizialmente solo:
 
 ```properties
 spring.application.name=ticket-api
 ```
 
-Quindi H2 e JPA sono disponibili come dipendenze, ma non sono ancora configurati esplicitamente.
+Quindi H2 e JPA sono disponibili come dipendenze, ma nello starter studenti non sono ancora configurati esplicitamente. Nel repository privato docente, invece, la solution reference contiene gia la configurazione H2/JPA completa e non va usata come stato iniziale dell'esercitazione.
 
 ## Scenario
 

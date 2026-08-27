@@ -24,7 +24,7 @@ Il programma prevede:
 - Performance, Costi, Skills;
 - repository di progetto con README;
 - file istruzioni Markdown riutilizzabile;
-- skill personale documentata;
+- skill personale documentata (skills.sh);
 - libreria di prompt strutturati.
 
 ## Target
@@ -109,9 +109,13 @@ Ogni attività sul codice deve quindi essere collegata a uno o più aspetti del 
 - Repository di progetto
 - README.md
 - File istruzioni Markdown
-- Skill personale documentata
+- Skill personale documentata (skills.sh)
 - Libreria di prompt strutturati
 - Checklist sicurezza AI coding
+
+## Convenzione terminologica
+
+Convenzione terminologica: nel progetto, "Blocco" indica una macro-area tematica del sillabus ufficiale; "Sessione" indica un incontro didattico da 4 ore; "Fase" indica un segmento temporale interno a una Sessione; "Modulo" indica un componente software/applicativo del project work, ad esempio il Modulo Ticket. Nei nuovi materiali evitare l'uso di "Modulo N" come sinonimo di "Sessione N".
 
 ## Budget orario del corso
 
@@ -119,7 +123,7 @@ Il corso ha una durata complessiva dichiarata di 24 ore.
 
 Questa sezione serve a controllare la densita didattica del percorso, evitando che gli esercizi pratici occupino tutto il tempo disponibile e lascino poco spazio a teoria, confronto, project finale e deliverable.
 
-### Stima esercizi prodotti finora
+### Stima storica degli esercizi prodotti nella fase iniziale
 
 | Area | Esercizi | Durata indicativa |
 | --- | --- | --- |
@@ -127,28 +131,32 @@ Questa sezione serve a controllare la densita didattica del percorso, evitando c
 | Blocco 2 - Generazione, persistenza, pipeline | Esercizi 4, 5, 6 | 195-240 min |
 | Totale esercizi 1-6 |  | 330-420 min, cioe 5,5-7 ore |
 
-L'Esercizio 7, dedicato alla code review umano vs AI, dovra essere piu snello rispetto all'Esercizio 6.
-
-Durata target Esercizio 7:
-
-- 45-60 minuti
-- massimo operativo: 75 minuti
-
-Stima esercizi 1-7:
-
-- durata ordinaria: circa 6,25-8 ore
-- durata massima operativa: circa 8,25 ore
+Questa stima documenta una fase iniziale della progettazione e non rappresenta il timing operativo definitivo del corso. La scansione temporale attuale e consolidata nei 6 outline di Sessione e in docs/09_Guida_Docente_Erogazione_Corso.md, dove ogni Sessione e verificata su 240 minuti complessivi.
 
 ### Budget operativo sulle 24 ore
 
-| Area del corso | Budget orientativo | Nota |
+Formato interno adottato: 24 ore totali, ripartite in 6 sessioni da 4 ore ciascuna.
+
+| Sessione | Blocco collegato | Titolo | Durata |
+| --- | --- | --- | --- |
+| Sessione 1 | Blocco 1 | Setup e prompt engineering | 4 ore |
+| Sessione 2 | Blocco 1 | Sicurezza, Prompt Injection e Data Leakage | 4 ore |
+| Sessione 3 | Blocco 1 | Design Pattern e integrazione assistita in progetti esistenti | 4 ore |
+| Sessione 4 | Blocco 2 | Generazione assistita di moduli applicativi e persistenza | 4 ore |
+| Sessione 5 | Blocco 2 | Pipeline dati, error handling e code review umano vs AI | 4 ore |
+| Sessione 6 | Blocco 3 | Performance, costi, skills.sh, project finale e chiusura | 4 ore |
+| **Totale** | | | **24 ore** |
+
+| Blocco | Sessioni | Durata |
 | --- | --- | --- |
-| Blocco 1 - metodo, sicurezza, prompt, design pattern | 6 ore | Include teoria, esercizi e confronto |
-| Blocco 2 - engineering, persistenza, pipeline, code review | 8 ore | Include esercizi 4-7 e review guidata |
-| Blocco 3 - performance, costi, skills | 4 ore | Da mantenere operativo e non sovraccaricato |
-| Project finale e deliverable | 4 ore | Applicativo, prompt library, README, skill personale |
-| Buffer, Q&A e riallineamenti | 2 ore | Margine per ritardi, setup o discussione |
-| Totale | 24 ore | Budget da verificare durante la progettazione finale |
+| Blocco 1 - AI Coding Foundations & Sicurezza | Sessioni 1-3 | 12 ore |
+| Blocco 2 - Engineering e Integrazione & Governance | Sessioni 4-5 | 8 ore |
+| Blocco 3 - Performance, Costi, Skills | Sessione 6 | 4 ore |
+| **Totale** | 6 sessioni | **24 ore** |
+
+Project finale, deliverable, buffer e Q&A non sono segmenti orari separati: sono attivita integrate all'interno delle singole sessioni. Ogni sessione da 4 ore include gia una propria fase di confronto/Q&A al proprio interno (come mostrato negli outline delle 6 Sessioni), e il project finale e trattato all'interno della Sessione 6.
+
+Questa ripartizione e una scelta didattica interna del repository: il sillabus ufficiale conferma 24 ore totali e i tre blocchi tematici, ma non assegna esplicitamente una durata in ore a ciascun blocco o sessione.
 
 ### Decisioni di gestione della densita
 
@@ -157,13 +165,12 @@ Stima esercizi 1-7:
 - L'Esercizio 7 deve restare focalizzato sulla code review umano vs AI, senza trasformarsi in revisione completa di tutto il progetto.
 - Il Blocco 3 deve restare concreto: performance, costi, skill personale e project finale.
 - Ogni esercizio deve produrre valore didattico, ma non deve assorbire tutto il tempo disponibile.
-- Il budget orario dovra essere ricontrollato dopo la produzione dell'Esercizio 7 e prima dell'avvio del Blocco 3.
 
 ## Nota su skills.sh
 
-Nel programma originale compare il riferimento a skills.sh.
+Il sillabus ufficiale richiede la skill personale documentata come skills.sh.
 
-Per chiarezza didattica useremo come ipotesi di lavoro il formato skills.md, salvo richiesta esplicita del committente di mantenere o affiancare un file skills.sh eseguibile.
+Nel repository, skills.sh e il deliverable obbligatorio della skill personale richiesto esplicitamente dal sillabus; skills.md e il file Markdown riutilizzabile adottato internamente dal progetto e affianca skills.sh senza sostituirlo.
 
 ## Decisioni ancora da verificare
 
@@ -172,4 +179,3 @@ Per chiarezza didattica useremo come ipotesi di lavoro il formato skills.md, sal
 - Hanno accesso a Claude?
 - Possono usare GitHub e Codespaces?
 - Ci sono restrizioni aziendali su AI, codice o dati?
-- Il deliverable finale deve essere skills.sh, skills.md o entrambi?

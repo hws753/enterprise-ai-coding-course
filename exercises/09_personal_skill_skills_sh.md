@@ -2,7 +2,7 @@
 
 ## Stato
 
-Documento di lavoro - prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro - esercitazione operativa del corso Enterprise AI Coding.
 
 ## Blocco del programma
 
@@ -192,10 +192,10 @@ Nel programma ufficiale compare skills.sh come deliverable della skill personale
 
 Per chiarezza didattica e piena aderenza al sillabus, il partecipante deve produrre entrambi i file:
 
-- skills.md come versione leggibile, documentata e principale della skill
+- skills.md come file Markdown riutilizzabile, leggibile e documentato, complementare a skills.sh
 - skills.sh come script minimo obbligatorio, sicuro, non distruttivo e privo di credenziali
 
-Il file skills.md contiene le istruzioni riutilizzabili e resta il riferimento operativo principale.
+Il file skills.md contiene le istruzioni riutilizzabili e affianca il deliverable obbligatorio skills.sh senza sostituirlo.
 
 Il file skills.sh deve essere semplice e dimostrativo: puo stampare un riferimento a skills.md, verificare prerequisiti minimi o mostrare come richiamare la skill, senza automatizzare operazioni rischiose.
 
@@ -319,7 +319,7 @@ Il file prompts/09_personal_skill_prompt.md deve contenere:
 - Copiare regole senza adattarle al project work
 - Inserire comandi shell non necessari
 - Inserire credenziali o token
-- Rendere skills.sh piu importante di skills.md
+- Trattare skills.md come sostitutivo di skills.sh
 - Trattare skills.sh come facoltativo nonostante sia richiesto dal sillabus
 - Usare la skill come sostituto della review umana
 - Non specificare cosa l'AI non deve fare
@@ -331,5 +331,5 @@ Il file prompts/09_personal_skill_prompt.md deve contenere:
 Durante il confronto in aula, verificare che i partecipanti abbiano capito questi tre punti:
 
 1. una skill personale serve a rendere riutilizzabile il metodo di lavoro, non a delegare responsabilita all'AI
-2. skills.md e il documento principale per chiarezza didattica; skills.sh e un deliverable minimo obbligatorio, sicuro e non distruttivo
+2. skills.sh e il deliverable obbligatorio della skill personale richiesto dal sillabus; skills.md e il file Markdown riutilizzabile adottato internamente e lo affianca senza sostituirlo
 3. una buona skill contiene anche limiti, divieti, criteri di review e controlli di sicurezza

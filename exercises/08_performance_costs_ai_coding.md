@@ -2,7 +2,7 @@
 
 ## Stato
 
-Documento di lavoro - prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro - esercitazione operativa del corso Enterprise AI Coding.
 
 ## Blocco del programma
 
@@ -39,7 +39,7 @@ Devono quindi essere gia presenti e verificati:
 - review umano vs AI
 - esecuzione di ./mvnw test
 
-Nel repository docente questi file non sono presenti di default: vengono generati dagli studenti durante gli esercizi precedenti.
+Nel repository pubblico studenti questi file non sono presenti nello starter iniziale: vengono generati e verificati durante gli esercizi precedenti. Nel repository privato docente, invece, la solution reference li contiene già e non va usata come base operativa dell'esercitazione.
 
 ## File coinvolti
 

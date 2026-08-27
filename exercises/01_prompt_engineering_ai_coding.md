@@ -1,7 +1,7 @@
 # Esercizio 1 — Prompt Engineering applicato alla Ticket Management API
 
 ## Stato
-Documento di lavoro — prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro - esercitazione operativa del corso Enterprise AI Coding.
 
 ## Blocco del programma
 AI Coding Foundations & Sicurezza — Prompt engineering avanzato.

@@ -8,6 +8,14 @@ Documento di lavoro - raccolta progressiva dei punti da trasformare in slide.
 
 Questo file raccoglie i nuclei teorici, le scelte didattiche e i messaggi chiave emersi dai materiali del Blocco 3.
 
+Il Blocco 3 e articolato internamente in una Sessione da 4 ore:
+
+- Sessione 6 - Performance, costi, skill personale e project finale
+
+Il totale del Blocco 3 e di 4 ore.
+
+Il sillabus ufficiale definisce performance e costi, skill personale (skills.sh) e project finale: applicativo + skill. Java 21, Spring Boot, H2, GitHub Codespaces, Ticket Management API, skills.md, la struttura interna della prompt library e rubriche/checklist operative sono scelte didattiche interne del repository e non dati dichiarati dal PDF ufficiale.
+
 Non e ancora una presentazione definitiva.
 
 Servira piu avanti per costruire le slide del corso, mantenendo coerenza tra:
@@ -99,7 +107,7 @@ Il costo dell'AI Coding include anche iterazioni, prompt inefficaci, risposte sc
 
 Punti da spiegare:
 
-- non si valutano solo costi economici o tariffe di provider
+- l'analisi resta qualitativa e metodologica: non si usano prezzi o tariffe reali dei provider
 - un prompt generico puo aumentare il numero di iterazioni
 - ogni risposta AI richiede verifica umana
 - le risposte scartate sono parte del costo operativo
@@ -220,7 +228,7 @@ Punti da spiegare:
 
 Messaggio chiave:
 
-skills.md e il documento principale per chiarezza didattica; skills.sh e un deliverable minimo obbligatorio, sicuro e non distruttivo.
+skills.sh e il deliverable obbligatorio della skill personale richiesto dal sillabus; skills.md e il file Markdown riutilizzabile adottato internamente dal progetto e affianca skills.sh senza sostituirlo.
 
 Punti da spiegare:
 
@@ -230,7 +238,7 @@ Punti da spiegare:
 - lo script non deve contenere credenziali, token o chiavi API
 - lo script non deve eseguire comandi distruttivi
 - lo script non deve installare dipendenze o inviare dati all'esterno
-- la parte documentale resta piu importante della parte eseguibile
+- skills.md e skills.sh hanno ruoli complementari: il primo documenta in forma leggibile e riutilizzabile, il secondo costituisce il deliverable obbligatorio della skill personale
 
 ## Sezione slide 11 - Review e accettazione della skill
 
@@ -259,7 +267,7 @@ La skill personale e un artefatto di sintesi: rende riutilizzabile il metodo, ma
 Punti da verificare in aula:
 
 - i partecipanti hanno distinto skills.md e skills.sh
-- i partecipanti sanno spiegare perche skills.md e il documento principale
+- i partecipanti sanno spiegare la differenza tra skills.md e skills.sh e il ruolo complementare dei due deliverable
 - i partecipanti hanno incluso regole di sicurezza e review
 - i partecipanti hanno indicato cosa l'AI non deve fare
 - i partecipanti hanno evitato credenziali, token e comandi rischiosi
@@ -396,6 +404,4 @@ Punti da verificare in aula:
 - i partecipanti hanno eseguito o documentato i test
 - i partecipanti hanno compilato rubrica, checklist e retrospettiva
 
-## Da completare dopo la produzione degli altri materiali del Blocco 3
-
-- eventuale checklist di chiusura del Blocco 3
+Per il controllo finale utilizzare anche docs/07_AI_Coding_Performance_Costi_Skills_Checklist.md.

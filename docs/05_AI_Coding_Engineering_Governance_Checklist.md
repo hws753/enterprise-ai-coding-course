@@ -2,17 +2,26 @@
 
 ## Stato
 
-Documento di lavoro - prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro — in aggiornamento.
 
 ## Scopo del documento
 
-Questa checklist chiude il secondo blocco del corso Enterprise AI Coding dedicato a:
+Questa checklist chiude il secondo Blocco del corso Enterprise AI Coding.
+
+Il Blocco 2 e articolato internamente in due Sessioni da 4 ore ciascuna, per un totale di 8 ore:
+
+- Sessione 4 - Generazione assistita e persistenza
+- Sessione 5 - Pipeline dati, error handling e code review
+
+La checklist copre i seguenti temi:
 
 - generazione assistita di moduli applicativi
 - integrazione database e persistenza
 - pipeline dati ed error handling aziendale
 - code review umano vs AI
 - governance tecnica del codice generato con assistenti AI
+
+Il sillabus ufficiale definisce generazione assistita di moduli applicativi, integrazione database e persistenza, pipeline dati ed error handling aziendale e code review umano vs AI. Spring Boot, H2/JPA, Ticket Management API, l'architettura Entity/DTO/Repository/Service/Controller e gli specifici componenti di error handling adottati nel project work sono scelte didattiche interne del repository e non dati dichiarati dal PDF ufficiale.
 
 La checklist serve come controllo operativo prima di considerare il modulo Ticket pronto per il project work finale e per il passaggio al Blocco 3.
 
@@ -99,9 +108,10 @@ Prima di accettare una soluzione di mapping proposta dall'AI, verifica:
 
 Prima di accettare la gestione errori, verifica:
 
-- [ ] Esiste una gestione chiara del caso ticket non trovato
+- [ ] Esiste una gestione chiara del caso ticket non trovato, ad esempio tramite TicketNotFoundException
 - [ ] Gli errori di validazione input sono gestiti
-- [ ] Esiste un formato coerente per le risposte di errore
+- [ ] Esiste un formato coerente per le risposte di errore, ad esempio tramite ErrorResponse
+- [ ] La gestione centralizzata degli errori, quando adottata, e coerente con GlobalExceptionHandler
 - [ ] I messaggi di errore sono comprensibili
 - [ ] Gli errori client e server sono distinti
 - [ ] Non vengono esposti stack trace
@@ -179,6 +189,7 @@ Per ogni decisione tecnica rilevante, verifica:
 - Accettare codice solo perche compila
 - Non leggere il codice generato
 - Inserire logica di business nel Controller
+- Usare try/catch generici nel Controller come soluzione standard di error handling
 - Esporre Entity direttamente nelle risposte API
 - Esporre stack trace o dettagli database
 - Aggiungere dipendenze non richieste

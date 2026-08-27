@@ -2,7 +2,7 @@
 
 ## Stato
 
-Documento di lavoro - prima bozza, da rivedere prima della pubblicazione definitiva.
+Documento di lavoro - esercitazione operativa del corso Enterprise AI Coding.
 
 ## Blocco del programma
 
@@ -205,7 +205,7 @@ Esempio minimo accettabile:
 set -euo pipefail
 
 echo "Enterprise AI Coding Skill"
-echo "Documento principale: skills.md"
+echo "skills.md affianca il deliverable obbligatorio skills.sh come documentazione riutilizzabile"
 echo "Usare la skill per prompt, review, sicurezza, governance e project finale."
 ```
 

@@ -8,6 +8,13 @@ Documento di lavoro - raccolta progressiva dei punti da trasformare in slide.
 
 Questo file raccoglie i nuclei teorici, le scelte didattiche e i messaggi chiave emersi dai materiali del Blocco 2.
 
+Il Blocco 2 e articolato internamente in due Sessioni da 4 ore ciascuna, per un totale di 8 ore:
+
+- Sessione 4 - Generazione assistita e persistenza
+- Sessione 5 - Pipeline dati, error handling e code review
+
+Il sillabus ufficiale definisce i temi del Blocco 2; Java 21, Spring Boot, H2, GitHub Codespaces, Ticket Management API, l'architettura Entity/DTO/Repository/Service/Controller e GlobalExceptionHandler sono scelte didattiche interne del repository e non dati dichiarati dal PDF ufficiale.
+
 Non e ancora una presentazione definitiva.
 
 Servira piu avanti per costruire le slide del corso, mantenendo coerenza tra:
@@ -403,10 +410,8 @@ Punti da spiegare:
 - eseguire ./mvnw test dopo eventuali modifiche
 - documentare cosa e stato corretto, cosa e stato rimandato e cosa resta da verificare
 
-Checkpoint didattico:
+Checkpoint di chiusura del Blocco 2 - Sessione 5:
 
-Prima di chiudere il Blocco 2, il partecipante deve saper usare la review AI come supporto critico, confrontarla con una checklist umana e motivare ogni decisione tecnica.
+Prima di chiudere il Blocco 2, il partecipante deve saper collegare generazione assistita, persistenza, pipeline, error handling, test e code review umano vs AI in un unico flusso controllato, usando la review AI come supporto critico e mantenendo la responsabilita finale delle decisioni tecniche.
 
-## Da completare dopo la produzione degli altri materiali del Blocco 2
-
-- eventuale checklist di chiusura del Blocco 2
+Per il controllo finale utilizzare anche docs/05_AI_Coding_Engineering_Governance_Checklist.md.
